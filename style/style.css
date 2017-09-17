@@ -645,7 +645,7 @@ p.projcard_text {
 .homecontent {
     width: 100%;
     z-index: 1;
-    min-height: 1250px;
+    /*min-height: 1250px;*/
     background-color:#FFFFFF;
 }
 
