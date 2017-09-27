@@ -79,35 +79,35 @@
     Summer - Fall 2017<br> Personal Project/ Master's of Engineering Project <br> Ithaca, NY
   </p>
   <p class="p_projcontent">
-  The goal of this project is to create a robot that would be able to observe a child’s drawing and draw alongside them. The vision is for this robot to enhance drawing as a recreational and creative outlet for children through human-robot cooperation.
+  This is a current ongoing capstone project for my graduate program in mechanical engineering The goal of this project is to create a robot that would be able to observe a child’s drawing and draw with them. The vision is for this robot to enhance drawing as a recreational and creative outlet for children through human-robot cooperation. A main focus of this project is to create a social robot that is able to communicate using nonverbal gestures with it's user.
   </p>
   <p class="p_projcontent">
-  The basis for the vision system was built using openCV. The current proof of concept model detects the canvas space of a piece of paper, transforms the image to a top down view of the drawing, and then transforms the detected contours of the drawing into G-Code.
+  With the current system design a user would draw on a piece of paper and then slide the paper under a frame with an overhead camera. The camera uses computer vision to take in the drawing and generate commands for a smaller mobile robot that will then run around the paper and draw before signaling to the user that it is now their turn. 
+  </p>
+  <p class="p_projcontent">
+  The basis for the vision system was built using openCV. The current proof of concept model detects the canvas space of a piece of paper and contours on the drawing. Current work includes using that data to generate paths for a drawing robot as well as using the overhead camera to localize a small mobile robot that will draw on the paper. We are also developing our own system for the mobile robot, sourcing parts and designing the chassis and relevant mechanisms such as a pen up - pen down actuator. The robot is currently designed to run using a Raspberry Pi Zero W and have it's own onboard power supply. The mobile robot will use bluetooth to communicate with the Raspberry Pi 3 that is running the vision and control system.
   </p>
 
-  <p class="p_projcontent">
-  The basis for the vision system was built using openCV. The current proof of concept model detects the canvas space of a piece of paper, transforms the image to a top down view of the drawing, and then transforms the detected contours of the drawing into G-Code.
-  </p>
 <!-- Begin Work Content-->
   <div class="row">
     <div class="col-sm-4">
       <div class="cards">
-        <a href="../assets/doodle/1.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/1.jpg" alt="2">
+        <a href="../assets/doodle/8.jpg" data-lightbox="doodle">
+          <img class="card_img" src="../assets/doodle/8.jpg" alt="2">
         </a>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="cards">
-        <a href="../assets/doodle/2.JPG" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/2.JPG" alt="3">
+        <a href="../assets/doodle/9.JPG" data-lightbox="doodle">
+          <img class="card_img" src="../assets/doodle/9.JPG" alt="3">
         </a>
       </div>
     </div>
     <div class="col-sm-4" >
       <div class="cards">
-        <a href="../assets/doodle/3.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/3.jpg" alt="3">
+        <a href="../assets/doodle/10.jpg" data-lightbox="doodle">
+          <img class="card_img" src="../assets/doodle/10.jpg" alt="3">
         </a>
       </div>
     </div>
@@ -116,15 +116,38 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="cards">
-        <a href="../assets/doodle/4.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/4.jpg" alt="2">
+        <a href="../assets/doodle/7.jpg" data-lightbox="doodle">
+          <img class="card_img" src="../assets/doodle/7a.jpg" alt="2">
         </a>
       </div>
     </div>
-    <div class="col-sm-4" style="margin-bottom:150px;">
+    <div class="col-sm-4" >
+      <div class="cards">
+        <a href="../assets/doodle/6.jpg" data-lightbox="doodle">
+          <img class="card_img" src="../assets/doodle/6.jpg" alt="3">
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4" >
       <div class="cards">
         <a href="../assets/doodle/5.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/5.jpg" alt="3">
+          <img class="card_img" src="../assets/doodle/5a.jpg" alt="3">
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-4">
+      <div class="cards">
+        <a href="../assets/doodle/3.jpg" data-lightbox="doodle">
+          <img class="card_img" src="../assets/doodle/3.jpg" alt="2">
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4" >
+      <div class="cards" style = "margin-bottom: 150px">
+        <a href="../assets/doodle/4.jpg" data-lightbox="doodle">
+          <img class="card_img" src="../assets/doodle/4.jpg" alt="3">
         </a>
       </div>
     </div>
