@@ -74,81 +74,73 @@
 
 
   <div id="all_content" class="container">
-  <h1> Doodle: A Robotic Drawing Companion</h1>
-  <div class = "row">
-  <div class="col-sm-8">
+  <h1> BeefBot: An Autonomous Grill Master</h1>
+  <div class="row">
+    <div class="col-sm-8">
   <p style="font-size: 15px">
-    Summer - Fall 2017<br> Master's of Engineering Project <br> Ithaca, NY
+    Fall 2017<br> Microcontrollers Design Course Final Project <br> Ithaca, NY
   </p>
   <p style="font-size: 15px">
-  The goal of this project is to create a robot that could serve as a drawing companion for children. The vision is for this robot to enhance drawing as a recreational and creative outlet for children through human-robot cooperation.
+  BeefBot was created to help aid with kitchen multi-tasking while easing the fear of overdoing a steak. The device monitors the temperature of a cut of meat, flips it when it's time, and then removes it from the heat to rest when the internal temperature is just right to get just the right level of done-ness. 
   </p>
   <p style="font-size: 15px">
-  The system is composed of an overhead localization system and a mobile robot platform. The user uses a pen with a marker on top to signal to the robbot where to follow. The mobile robot recieves motion commands from the vision system as it follows the user. The pen has two tags on either side which signal to the robot whether to retract or deploy a pen which is used to draw as the robot moves.
+  A thermosistor is used to measure the internal temperature of the meat. Two additional skewers are used to further constrain the cut. The skewers and thermosistor sit in an aluminum housing which is attached to a geared DC motor via set screw. This motor is in turn attached to a platform that can move up and down via a lead screw and guide rails. This lead screw is actuated with another geared DC motor that is housed in the base. When the user places the cut of meat and selects the level of done-ness the PIC32 begins monitoring the temperature via an ADC channel connected to the output of the thermosistor running through a low pass filter. When a temperature is reached based on the settings the PIC sends a signal to dual H-Bridge that turns the lead screw for a few seconds to raise the steak, then sends a low duty cycle PWM to the flipping motor to slowly turn the steak, and then finally lower the steak by changing the direction of the lead screw motor. When the steak is deemed to be ready by it's internal temperture reading, it is removed from the ehat by raising it.
   </p>
   <p style="font-size: 15px">
-  A Raspberry Pi 3 is used to control the overhead localization with the use of a camera and openCV to track markers. The mobile robot platform uses a Pi Zero W to recieve commands from the Pi 3 via bluetooth. The mobile robot platform comes with it's own power source and uses two continous rotation servos to drive it's wheels and a servo for pen actuation. 
+  This project was completed over the course of five weeks as part of an open-ended final project for a design with micro-controllers course. More details can be found in our final report <a onclick ='window.open("http://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/f2017/mh866_jtm293_kan54/mh866_jtm293_kan54/mh866_jtm293_kan54/index.html") ; return false;'>here</a>.
   </p>
   </div>
-  <div class="col-sm-4" style="margin-top:100px">
-  <iframe width="460" height="315" src="https://www.youtube.com/embed/5XzZk-SznUQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-  </div>
-  </div>
+  <div class="col-sm-4" style="margin-top:200px">
+<iframe width="460" height="315" src="https://www.youtube.com/embed/fyRwjMZFeJ4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
 <!-- Begin Work Content-->
   <div class="row">
-  <div class="col-sm-4">
+    <div class="col-sm-4">
       <div class="cards">
-        <a href="../assets/doodle/17.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/17a.jpg" alt="3" style="width:100%">
-        </a>
-      </div>
-    </div>
-        <div class="col-sm-4">
-      <div class="cards">
-        <a href="../assets/doodle/16.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/16a.jpg" alt="3" style="width:100%">
+        <a href="../assets/beefbot/4.jpg" data-lightbox="beefbot">
+          <img class="card_img" src="../assets/beefbot/4a.png" alt="2" style="width:100%">
         </a>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="cards">
-        <a href="../assets/doodle/15.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/15.jpg" alt="2" style="width:100%">
-        </a>
-      </div>
-    </div>
-    
-<!--     <div class="col-sm-4" >
-      <div class="cards">
-        <a href="../assets/doodle/13.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/13.jpg" alt="3" style="width:100%">
-        </a>
-      </div>
-    </div> -->
-  </div>
-
-  <div class="row">
-      <div class="col-sm-4">
-      <div class="cards">
-        <a href="../assets/doodle/12.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/12.jpg" alt="3" style="width:100%">
-        </a>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="cards">
-        <a href="../assets/doodle/14.jpg" data-lightbox="doodle">
-          <img class="card_img" src="../assets/doodle/14.jpg" alt="2" style="width:100%">
+      <div class="whitecards">
+        <a href="../assets/beefbot/3.jpg" data-lightbox="beefbot">
+          <img class="card_img" src="../assets/beefbot/3a.png" alt="3" style="width:100%">
         </a>
       </div>
     </div>
     <div class="col-sm-4" >
-      <div class="cards" style = "margin-bottom: 150px">
+      <div class="whitecards">
+        <a href="../assets/beefbot/2.jpg" data-lightbox="beefbot">
+          <img class="card_img" src="../assets/beefbot/2a.png" alt="3" style="width:100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4" style = "margin-bottom: 150px">
+      <div class="cards">
+        <a href="../assets/beefbot/1.jpg" data-lightbox="beefbot">
+          <img class="card_img" src="../assets/beefbot/1a.png" alt="2" style="width:100%">
+        </a>
+      </div>
+    </div>
+<!--     <div class="col-sm-4" >
+      <div class="whitecards">
         <a href="../assets/doodle/11.jpg" data-lightbox="doodle">
           <img class="card_img" src="../assets/doodle/11.jpg" alt="3" style="width:100%">
         </a>
       </div>
     </div>
+    <div class="col-sm-4" >
+      <div class="cards" style = "margin-bottom: 150px">
+        <a href="../assets/doodle/7.JPG" data-lightbox="doodle">
+          <img class="card_img" src="../assets/doodle/7a.JPG" alt="3" style="width:100%">
+        </a>
+      </div>
+    </div> -->
     </div>
 <!--     <div class="row">
     <div class="col-sm-4">
