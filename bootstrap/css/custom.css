@@ -1,0 +1,62 @@
+html, body{
+    font-family: "Raleway", sans-serif;
+}
+
+.navtext a {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #222 !important;
+    opacity: .9;
+    letter-spacing: .1em;
+    font-size: 13px;
+    font-weight: 600;
+}
+.navlist {
+  text-align: left
+}
+
+.workcard{
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+  
+}
+
+.workcard:hover{
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  -webkit-filter: grayscale(20%) brightness(80%);
+  -webkit-transition: .3s ease-in-out;
+  -moz-filter: grayscale(20%) brightness(80%);
+  -moz-transition: .3s ease-in-out;
+  -o-filter: grayscale(20%) brightness(80%);
+  -o-transition: .3s ease-in-out;
+  filter: grayscale(20%) brightness(80%);  
+}
+.gallerycard{
+  cursor: pointer;
+}
+.gallerycard:hover{
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  -webkit-filter: grayscale(20%) brightness(80%);
+  -webkit-transition: .3s ease-in-out;
+  -moz-filter: grayscale(20%) brightness(80%);
+  -moz-transition: .3s ease-in-out;
+  -o-filter: grayscale(20%) brightness(80%);
+  -o-transition: .3s ease-in-out;
+  filter: grayscale(20%) brightness(80%);  
+}
+
+.cardtext{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #222 !important;
+    opacity: .9;
+    letter-spacing: .1em;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .navlist {
+    text-align: right
+  }
+}
